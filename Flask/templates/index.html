@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section class="hero" id="bienvenida">
+        <div class="container">
+            <h2>Bienvenidos a la Universidad Nueva Esparta</h2>
+            <p>Formando profesionales de excelencia con más de 30 años de trayectoria educativa en Venezuela</p>
+            <a href="{{url_for('carreras')}}" class="btn">Conoce Nuestras Carreras</a>
+        </div>
+    </section>
+    <section class="about" id="la-universidad">
+    <div class="container">
+        <h2 class="section-title">Sobre la Universidad Nueva Esparta</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <div class="about-intro">
+                    <h3>Nuestra Institución</h3>
+                    <p>La Universidad Nueva Esparta (UNE) es una institución de educación superior privada con más de 35 años de trayectoria en la formación de profesionales de excelencia. Fundada en 1988, nos hemos consolidado como una de las universidades más prestigiosas de Venezuela.</p>
+                </div>
+                
+                <div class="about-mission-vision">
+                    <div class="mission-vision-card">
+                        <div class="mv-icon">🎯</div>
+                        <h4>Misión</h4>
+                        <p>Formar profesionales integrales, competentes y éticos, capaces de contribuir al desarrollo sostenible del país mediante la generación y aplicación del conocimiento, con un enfoque humanista y de excelencia académica.</p>
+                    </div>
+                    <div class="mission-vision-card">
+                        <div class="mv-icon">🔭</div>
+                        <h4>Visión</h4>
+                        <p>Ser reconocida como la universidad líder en innovación educativa, investigación aplicada y vinculación social, manteniendo los más altos estándares de calidad académica y contribuyendo significativamente al progreso de la nación.</p>
+                    </div>
+                </div>
+
+                <div class="about-values">
+                    <h4>Nuestros Valores</h4>
+                    <div class="values-grid">
+                        <div class="value-item">
+                            <span class="value-icon">⭐</span>
+                            <h5>Excelencia Académica</h5>
+                            <p>Compromiso con los más altos estándares de calidad en la formación profesional.</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🤝</span>
+                            <h5>Integridad</h5>
+                            <p>Actuamos con honestidad, transparencia y responsabilidad en todas nuestras acciones.</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🌱</span>
+                            <h5>Innovación</h5>
+                            <p>Fomentamos la creatividad y la adaptación a los cambios tecnológicos y sociales.</p>
+                        </div>
+                        <div class="value-item">
+                            <span class="value-icon">🌍</span>
+                            <h5>Responsabilidad Social</h5>
+                            <p>Comprometidos con el desarrollo sostenible y el bienestar de la comunidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-stats">
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">35+</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">15,000+</div>
+                        <div class="stat-label">Egresados</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Programas Académicos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Facultades</div>
+                    </div>
+                </div>
+                
+                <div class="leadership">
+                    <h4>Liderazgo Institucional</h4>
+                    <div class="leadership-card">
+                        <div class="leader-info">
+                            <h5>Dra. Belkis Matheus</h5>
+                            <p class="leader-position">Decana</p>
+                            <p class="leader-bio">Decana de la facultad de ciencias Informáticas</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="leadership-card">
+                        <div class="leader-info">
+                            <h5>Dr. William Castillo</h5>
+                            <p class="leader-position">Decano</p>
+                            <p class="leader-bio">Decano de la facultad de ciencias administrativas</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="leadership-card">
+                        <div class="leader-info">
+                            <h5>Dra. Elvira Alfonsi</h5>
+                            <p class="leader-position">Vicerrectora</p>
+                            <p class="leader-bio">Vicerrectora Académica Encargada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="history-section">
+            <h3 class="section-subtitle">Nuestra Historia</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">1988</div>
+                    <div class="timeline-content">
+                        <h5>Fundación</h5>
+                        <p>La Universidad Nueva Esparta fue fundada con el objetivo de brindar educación superior de calidad accesible a todos los venezolanos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">1995</div>
+                    <div class="timeline-content">
+                        <h5>Primera Acreditación</h5>
+                        <p>Obtuvimos nuestra primera acreditación nacional, reconociendo la calidad de nuestros programas académicos.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2005</div>
+                    <div class="timeline-content">
+                        <h5>Expansión</h5>
+                        <p>Ampliamos nuestra oferta académica con nuevas facultades y programas de postgrado.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h5>Innovación Digital</h5>
+                        <p>Implementamos plataformas digitales avanzadas para la educación híbrida y a distancia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="news" id="noticias">
+        {% include 'news.html' %} </section>
+
+{% endblock %}

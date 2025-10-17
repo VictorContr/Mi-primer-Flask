@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+
+{% block title %}Oferta Académica - Universidad Nueva Esparta{% endblock %}
+
+{% block content %}
+    
+    <section class="hero-careers">
+        <div class="container">
+            <h2>Tu Futuro Comienza Aquí</h2>
+            <p>Descubre nuestra amplia oferta académica y encuentra la carrera perfecta para tus talentos y aspiraciones profesionales</p>
+            <div>
+                <a href="#carreras" class="btn">Explorar Carreras</a>
+                <a href="#inscripcion" class="btn btn-secondary" onclick="openModal()">Inscríbete Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="carreras">
+        <div class="container">
+            <h2 class="section-title">Nuestras Carreras Universitarias</h2>
+            <p class="section-subtitle">Ofrecemos programas académicos de pregrado diseñados para formar profesionales líderes en sus áreas de conocimiento</p>
+            
+            <div class="careers-grid">
+                
+                <div class="career-card" data-category="ingenieria">
+                    <div class="career-header">
+                        <div class="career-icon">💻</div>
+                        <h3 class="career-title">Ingeniería en Informática</h3>
+                        <div class="career-duration">Duración: 5 años</div>
+                    </div>
+                    <div class="career-body">
+                        <p class="career-description">Formamos profesionales capaces de diseñar, desarrollar e implementar soluciones tecnológicas innovadoras para empresas y organizaciones.</p>
+                        <ul class="career-features">
+                            <li>Programación avanzada</li>
+                            <li>Base de datos y big data</li>
+                            <li>Inteligencia artificial</li>
+                            <li>Ciberseguridad</li>
+                        </ul>
+                        <div class="career-actions">
+                            <a href="#inscripcion" class="btn-small" onclick="openModal()">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-card" data-category="administracion">
+                    <div class="career-header">
+                        <div class="career-icon">📊</div>
+                        <h3 class="career-title">Administración de Empresas</h3>
+                        <div class="career-duration">Duración: 4 años</div>
+                    </div>
+                    <div class="career-body">
+                        <p class="career-description">Desarrolla habilidades directivas y de gestión empresarial para liderar organizaciones en un entorno global y competitivo.</p>
+                        <ul class="career-features">
+                            <li>Gestión financiera</li>
+                            <li>Marketing estratégico</li>
+                            <li>Recursos humanos</li>
+                            <li>Emprendimiento</li>
+                        </ul>
+                        <div class="career-actions">
+                            <a href="#inscripcion" class="btn-small" onclick="openModal()">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-card" data-category="derecho">
+                    <div class="career-header">
+                        <div class="career-icon">⚖️</div>
+                        <h3 class="career-title">Derecho</h3>
+                        <div class="career-duration">Duración: 5 años</div>
+                    </div>
+                    <div class="career-body">
+                        <p class="career-description">Formamos juristas con sólidos principios éticos y conocimiento del ordenamiento jurídico para ejercer con excelencia profesional.</p>
+                        <ul class="career-features">
+                            <li>Derecho civil y penal</li>
+                            <li>Derecho mercantil</li>
+                            <li>Derecho internacional</li>
+                            <li>Práctica forense</li>
+                        </ul>
+                        <div class="career-actions">
+                            <a href="#inscripcion" class="btn-small" onclick="openModal()">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-card" data-category="diseno">
+                    <div class="career-header">
+                        <div class="career-icon">📐</div>
+                        <h3 class="career-title">Arquitectura</h3>
+                        <div class="career-duration">Duración: 5 años</div>
+                    </div>
+                    <div class="career-body">
+                        <p class="career-description">Desarrolla tu creatividad y capacidad técnica para diseñar espacios funcionales, sostenibles y estéticamente valiosos.</p>
+                        <ul class="career-features">
+                            <li>Diseño arquitectónico</li>
+                            <li>Urbanismo y paisajismo</li>
+                            <li>Sostenibilidad</li>
+                            <li>Tecnologías constructivas</li>
+                        </ul>
+                        <div class="career-actions">
+                            <a href="#inscripcion" class="btn-small" onclick="openModal()">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-card" data-category="ingenieria">
+                    <div class="career-header">
+                        <div class="career-icon">🔧</div>
+                        <h3 class="career-title">Ingeniería Industrial</h3>
+                        <div class="career-duration">Duración: 5 años</div>
+                    </div>
+                    <div class="career-body">
+                        <p class="career-description">Optimiza procesos productivos y sistemas organizacionales para aumentar la eficiencia y competitividad empresarial.</p>
+                        <ul class="career-features">
+                            <li>Gestión de operaciones</li>
+                            <li>Logística y cadena de suministro</li>
+                            <li>Calidad y productividad</li>
+                            <li>Ergonomía y seguridad</li>
+                        </ul>
+                        <div class="career-actions">
+                            <a href="#inscripcion" class="btn-small" onclick="openModal()">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="career-card" data-category="administracion">
+                    <div class="career-header">
+                        <div class="career-icon">💰</div>
+                        <h3 class="career-title">Contaduría Pública</h3>
+                        <div class="career-duration">Duración: 5 años</div>
+                    </div>
+                    <div class="career-body">
+                        <p class="career-description">Domina las normas financieras y fiscales para asesorar organizaciones en la toma de decisiones económicas estratégicas.</p>
+                        <ul class="career-features">
+                            <li>Auditoría y control</li>
+                            <li>Contabilidad financiera</li>
+                            <li>Fiscalidad</li>
+                            <li>Costos y presupuestos</li>
+                        </ul>
+                        <div class="career-actions">
+                            <a href="#inscripcion" class="btn-small" onclick="openModal()">Solicitar Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
